@@ -153,10 +153,6 @@ def remove_member_from_group(email):
 
 def main():
     member_emails = get_member_emails()
-
-    #print('####### IS IN TEST MODE #######')
-    #member_emails = [u'member@mollstam.com', u'tobias@mollstam.com']
-
     google_group_members = get_group_members()
 
     group_members_to_add = [
