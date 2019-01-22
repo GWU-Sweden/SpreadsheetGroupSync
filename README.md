@@ -9,4 +9,4 @@ python sync.py <MEMBERSHIP_SPREADSHEET_ID> <MEMBERS_GROUP_ID>
 
 This is quite handy as e.g. G-Suite documents can be shared to G-Suite groups so that access management to "members only" documents is a little bit less of a hassle.
 
-You probably need to change the `SPREADSHEET_RANGE_NAME`, `SPREADSHEET_EMAIL_INDEX`, `SPREADSHEET_STATUS_INDEX` in the script. A nice feature would be to add this to the command line maybe. :fox:
+You probably need to change the `SPREADSHEET_RANGE_NAME`, `SPREADSHEET_EMAIL_INDEX`, `SPREADSHEET_STATUS_INDEX` in the script. A nice feature would be to add this to the command line maybe. :fox_face:
