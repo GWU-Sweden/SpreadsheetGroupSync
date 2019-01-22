@@ -156,10 +156,10 @@ def main():
     google_group_members = get_group_members()
 
     group_members_to_add = [
-        x for x in member_emails if x.lower() not in google_group_members
+        x for x in member_emails if x not in google_group_members
     ]
     group_members_to_remove = [
-        x for x in google_group_members if x.lower() not in member_emails
+        x for x in google_group_members if x not in member_emails
     ]
 
     for to_add in group_members_to_add:
