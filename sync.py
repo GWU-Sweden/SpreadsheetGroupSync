@@ -140,10 +140,14 @@ def add_member_to_group(email):
         'kind': 'admin#directory#member',
         'role': 'MEMBER',
         'type': 'USER',
-        'email': email
+        'email': email,
+        'delivery_settings': 'NONE'
     }
-    results = service.members().insert(
-        groupKey=GROUP_ID, body=user_body).execute()
+    try:
+        results = service.members().insert(
+            groupKey=GROUP_ID, body=user_body).execute()
+    except Exception, e:
+        print("ERROR when adding {}:\n\t{}".format(email, e))
 
 
 def remove_member_from_group(email):
