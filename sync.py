@@ -97,7 +97,7 @@ def get_member_emails():
                 print('SKIP: E-mail "{}" failed sanity check, skipping...'.
                       format(email))
                 continue
-            emails.append(email.lower())
+            emails.append(email.lower().strip())
 
     return emails
 
