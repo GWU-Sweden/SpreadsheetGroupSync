@@ -7,6 +7,11 @@ import re
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+"""import logging
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+import httplib2
+httplib2.debuglevel = 4"""
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = [
